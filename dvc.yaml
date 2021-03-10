@@ -1,0 +1,5 @@
+stages:
+  unzip:
+    cmd: unzip newspaper_maps.zip
+    deps:
+    - newspaper_maps.zip

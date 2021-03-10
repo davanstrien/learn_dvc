@@ -1,0 +1,8 @@
+schema: '2.0'
+stages:
+  unzip:
+    cmd: unzip newspaper_maps.zip
+    deps:
+    - path: newspaper_maps.zip
+      md5: ea81ef0b964ff9295d19e7ba42b51540
+      size: 314305730
