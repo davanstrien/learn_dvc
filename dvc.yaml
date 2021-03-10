@@ -3,3 +3,12 @@ stages:
     cmd: unzip newspaper_maps.zip
     deps:
     - newspaper_maps.zip
+    outs:
+    - newspaper_maps/
+  generate_image_metadata:
+    cmd: jupyter nbconvert --to script --execute 00_generate_image_metadata.ipynb && rm 00_generate_image_metadata.py
+    deps:
+    - 00_generate_image_metadata.ipynb
+    - newspaper_maps/
+    outs:
+    - image_metadata.csv

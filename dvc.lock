@@ -6,3 +6,22 @@ stages:
     - path: newspaper_maps.zip
       md5: ea81ef0b964ff9295d19e7ba42b51540
       size: 314305730
+    outs:
+    - path: newspaper_maps/
+      md5: 3d110165f7add5b18b34b07923075869.dir
+      size: 316876649
+      nfiles: 225
+  generate_image_metadata:
+    cmd: jupyter nbconvert --to script --execute 00_generate_image_metadata.ipynb
+    deps:
+    - path: 00_generate_image_metadata.ipynb
+      md5: 9b758f60a485c37331e6edbfb19777a3
+      size: 2196
+    - path: newspaper_maps/
+      md5: 3d110165f7add5b18b34b07923075869.dir
+      size: 316876649
+      nfiles: 225
+    outs:
+    - path: image_metadata.csv
+      md5: dde935da7b0a818208e644c83b9e7749
+      size: 24150
