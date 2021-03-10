@@ -1,0 +1,4 @@
+outs:
+- md5: 899ce40cf7e19d76b19cd1454a5ecc2c
+  size: 22267
+  path: map_labels.csv
