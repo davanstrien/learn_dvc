@@ -1,0 +1,10 @@
+md5: 9c86588e890b7b4299275f85a06fb618
+frozen: true
+deps:
+- etag: '"md5:ea81ef0b964ff9295d19e7ba42b51540"'
+  size: 314305730
+  path: https://zenodo.org/record/4156510/files/newspaper_maps.zip?download=1
+outs:
+- md5: ea81ef0b964ff9295d19e7ba42b51540
+  size: 314305730
+  path: newspaper_maps.zip
